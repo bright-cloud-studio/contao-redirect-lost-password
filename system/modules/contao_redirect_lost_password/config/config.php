@@ -10,4 +10,4 @@
  * @license    http://opensource.org/licenses/lgpl-3.0.html
 **/
 
-$GLOBALS['FE_MOD']['user']['login'] = 'Bcs\Module\ModuleLostPasswordRedirect';
+$GLOBALS['FE_MOD']['user']['lostPassword'] = 'Bcs\Module\ModuleLostPasswordRedirect';
