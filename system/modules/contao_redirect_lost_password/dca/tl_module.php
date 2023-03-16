@@ -10,11 +10,11 @@
 **/
 
  /* Extend the tl_module palettes */
-$GLOBALS['TL_DCA']['tl_module']['palettes']['login'] = str_replace(',redirectBack;', ',jumpToFailed,redirectBack;', $GLOBALS['TL_DCA']['tl_module']['palettes']['login']);
+$GLOBALS['TL_DCA']['tl_module']['palettes']['lostPassword'] = str_replace('{email_legend:hide}', ',jumpToFailed,{email_legend:hide}', $GLOBALS['TL_DCA']['tl_module']['palettes']['lostPassword']);
 
-$GLOBALS['TL_DCA']['tl_module']['fields']['jumpToFailed'] = array
+$GLOBALS['TL_DCA']['tl_module']['fields']['jumpToAlternative'] = array
 (
-  'label'                   => &$GLOBALS['TL_LANG']['tl_module']['jumpToFailed'],
+  'label'                   => &$GLOBALS['TL_LANG']['tl_module']['jumpToAlternative'],
   'inputType'               => 'pageTree',
   'foreignKey'              => 'tl_page.title',
   'eval'                    => array('fieldType'=>'radio'),
