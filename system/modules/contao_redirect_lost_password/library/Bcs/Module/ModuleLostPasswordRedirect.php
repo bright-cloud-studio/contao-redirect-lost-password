@@ -27,36 +27,7 @@ class ModuleLostPasswordRedirect extends \Contao\ModuleLogin
         // perform our normal compilation functions
         parent::compile();
         
-        // get our selected failure page
-        $objTarget = $this->objModel->getRelated('jumpToAlternative');
-        
-        // if we have a failure page selected
-        if($objTarget != null) {
-            
-            // get authorization values
-            $container = \System::getContainer();
-            $authorizationChecker = $container->get('security.authorization_checker');
-            
-            
-            // if value isnt empty, meaning we failed the previous login
-            if($this->Template->value != "") {
-                
-                // if we havent been authorized, meaning granted a role, then we didn't just log in successfully
-                if (!$authorizationChecker->isGranted('ROLE_MEMBER')) {
-                
-                	// the the url of the failure page
-        			$strRedirect = $objTarget->getAbsoluteUrl();
-        			
-                    // forward ourselves to that page
-                    header("Location: " . $strRedirect);
-                    
-                    // this will stop any other successive forwards, doesn't work without this surprisingly.
-                    echo " ";
-                    
-                }
-            }
-            
-        }
+        // This is where our custom code will go
         
     }
 }
