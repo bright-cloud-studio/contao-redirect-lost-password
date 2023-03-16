@@ -10,7 +10,7 @@
 **/
 
  /* Extend the tl_module palettes */
-$GLOBALS['TL_DCA']['tl_module']['palettes']['lostPassword'] = str_replace('{email_legend:hide}', ',jumpToFailed,{email_legend:hide}', $GLOBALS['TL_DCA']['tl_module']['palettes']['lostPassword']);
+$GLOBALS['TL_DCA']['tl_module']['palettes']['lostPassword'] = str_replace('{email_legend:hide}', ',jumpToAlternative,{email_legend:hide}', $GLOBALS['TL_DCA']['tl_module']['palettes']['lostPassword']);
 
 $GLOBALS['TL_DCA']['tl_module']['fields']['jumpToAlternative'] = array
 (
