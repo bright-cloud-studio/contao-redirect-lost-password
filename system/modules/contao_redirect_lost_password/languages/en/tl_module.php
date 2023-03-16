@@ -11,4 +11,4 @@
 **/
 
 /* Fields */
-$GLOBALS['TL_LANG']['tl_module']['jumpToAlternative']          = array('Redirect (Lost Password) page', 'Please choose the alternative page to send users to when returning from lost password\'s email link');
+$GLOBALS['TL_LANG']['tl_module']['jumpToAlternative']          = array('Alternative Redirect Page', 'Choose an alternative page the user will be sent to when clicking the link within the Lost Password email');
