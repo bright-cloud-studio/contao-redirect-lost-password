@@ -14,7 +14,7 @@ namespace Bcs\Module;
 use Contao;
 use Contao\Config;
 
-class ModuleLostPasswordRedirect extends \Contao\ModuleLostPassword
+class ModuleLostPasswordRedirect extends \Contao\ModulePassword
 {
     public function generate()
     {
